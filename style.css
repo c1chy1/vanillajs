@@ -1,0 +1,394 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+h1, h2 {
+
+    font-family: Arial, sans-serif;
+}
+
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 20px;
+
+}
+
+img {
+    width: 312px;
+    border-radius: 10px;
+
+}
+
+
+h1 {
+
+    padding: 10px 0 10px 0;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 33px;
+    width: 312px;
+
+}
+
+h2 {
+
+    padding-top: 20px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+    width: 312px;
+
+}
+
+h3 {
+    padding-top: 20px;
+    font-size: 17px;
+
+}
+small {
+
+    font-size: 16px;
+    color : #999999
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    margin-top: 50px;
+}
+
+
+button {
+
+    width: 170px;
+    font-size: 15px;
+    padding: 8px 7px 7px 7px;
+    color: #0000FF;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    border-color: #0000FF;
+    border-width: 2px;
+    border-radius: 40px;
+    display: flex;
+    margin: 0 20px 40px 0;
+}
+
+button svg {
+    width: 16px;
+    height: 16px;
+    fill: #0000FF;
+}
+
+.container {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 80px 24px 80px 24px
+
+}
+
+#hero , #text-media , #card {
+
+    max-width: 312px;
+
+}
+
+#hero {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#hero img {
+max-height: 312px;
+}
+
+
+.card {
+   display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    margin: 0 auto;
+    max-width: 312px;
+
+}
+
+.card img {
+
+    width: 312px;
+    border-radius: 0;
+}
+
+.card span {
+
+    border-radius: 3px;
+    display: inline-block;
+    color:#333333;
+    background-color: #EFEFEF;
+    padding: 0 5px;
+    margin: 5px 5px 40px 5px;
+    line-height: 26px;
+
+
+}
+
+.card span p {
+    font-size: 13px;
+    margin-top: 0;
+}
+
+
+@media (min-width: 740px) {
+
+
+    #hero , #text-media , #card {
+
+        max-width: 692px;
+
+    }
+
+
+    p {
+        font-size: 17px;
+        margin-top: 20px;
+        line-height: 28px;
+    }
+
+      h1  {
+
+          width: 692px;
+          line-height: 48px;
+      }
+
+    h3  {
+
+      font-size: 20px;
+    }
+
+    .container {
+        max-width: 740px;
+
+    }
+
+    button {
+
+        margin-top: 20px;
+        font-size: 17px;
+        line-height: 20px;
+        width: 187px;
+        gap: 5px;
+
+    }
+
+     img {
+
+        width: 100%;
+    }
+
+
+  section {
+        max-width: 692px;
+        gap: 30px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+  hr{ margin-top:0}
+
+    #hero div h1 {
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 28px;
+    }
+
+    #text-media article div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #text-media article div aside {
+
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    #text-media article div:last-child {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #text-media h1 {
+        width: 454px;
+
+        font-size: 28px;
+        line-height: 32px;
+
+    }
+
+h2 {
+
+
+        font-size: 20px;
+        line-height: 30px;
+
+    }
+
+    #text-media img {
+        width: 188px;
+    }
+
+    .card {
+
+        padding: 12px 0 12px 0;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 692px;
+
+    }
+
+}
+
+
+@media (min-width: 1440px) {
+
+    p {
+
+        line-height: 32px;
+        font-size: 19px;
+    }
+
+    h1  {
+
+        width: 700px;
+        line-height: 72px;
+    }
+
+    h2 {
+
+
+        font-size: 24px;
+        line-height: 32px;
+
+    }
+
+    #hero , #text-media , #card {
+
+        max-width: 1360px;
+
+    }
+
+    #hero img {
+
+        max-height: 906px;
+        width: 1360px;
+    }
+
+   section {
+        max-width: 1360px;
+        gap: 100px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+         align-items: center;
+    }
+    .container {
+        max-width: 1520px;
+    }
+
+    #hero div {
+
+        position: absolute;
+       bottom: 0;
+    left:40px;
+
+    }
+
+    #hero div h1 {
+
+        font-size: 72px;
+        font-weight: 700;
+        color: white;
+        line-height: 72px;
+
+    }
+
+
+   #hero button {
+        width: 170px;
+        font-size: 15px;
+        line-height: 18px;
+        color: white;
+        border-color: white;
+        margin: 20px 0 50px 0;
+    }
+
+  #hero button svg {
+        width: 16px;
+        height: 16px;
+        fill: white;
+    }
+
+
+    #text-media article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #text-media article div aside {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #text-media article {
+        display: flex;
+
+    }
+
+    #text-media div div {
+        width: 665px;
+    }
+
+    #text-media h1 {
+
+        width: 515px;
+        font-size: 36px;
+        line-height: 40px;
+
+    }
+
+    .cards {
+        display: flex;
+        gap: 40px;
+    }
+
+    .card {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        max-width: 1360px;
+
+    }
+    .card img {
+
+        width: 660px;
+
+    }
+
+}
+
+
+
